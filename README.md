@@ -1,5 +1,5 @@
 # Digital Innovation One - Decola Tech 3ª Edição
-# Introdução ao React Native
+# Introdução ao React Native com Ismael Moreira (https://github.com/ismaelsousa)
 ![image](https://user-images.githubusercontent.com/87333149/170793297-9043addd-7bac-43fa-9475-57e744d15268.png)
 
 # Conteúdo
