@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Image, Text, StyleSheet, SafeAreaView, StatusBar, Pressable, Linking, } from 'react-native';
+import {View, Image, Text, StyleSheet, SafeAreaView, StatusBar, Pressable, Linking} from 'react-native';
 
 const colorGithub = '#010409';
 const colorFontGitHub = '#c9d1d9';
