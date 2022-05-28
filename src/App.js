@@ -1,9 +1,11 @@
 import React from "react";
-import {View, Image, Text, StyleSheet, SafeAreaView, StatusBar, Pressable, Linking} from 'react-native';
+import {View, Image, Text, StyleSheet, SafeAreaView, StatusBar, Pressable, Linking, } from 'react-native';
 
 const colorGithub = '#010409';
-const colorFontGitHub = '#c9d1d9'
-const colorDarkFontGitHub = '#8b949e'
+const colorFontGitHub = '#c9d1d9';
+const colorDarkFontGitHub = '#8b949e';
+const colorDarkGreen = '#0e4429';
+const colorLightGreen = '#39d353';
 
 const imageProfile = 'https://avatars.githubusercontent.com/u/87333149?v=4';
 
@@ -47,6 +49,98 @@ const App = () => {
                 Aprendendo Front-End | JavaScript | HTML5 | CCS3 | React | React Native |
                 Insta: @s_a.anderson
             </Text>
+
+            <View style={style.gitHubBalls}>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>        
+            </View>
+            <View style={style.gitHubBalls}>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>        
+            </View>
+            <View style={style.gitHubBalls}>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>        
+            </View>
+            <View style={style.gitHubBalls}>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text> 
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>       
+            </View>
+            <View style={style.gitHubBalls}>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text> 
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.ballLightGreen}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>       
+            </View>
+            <View style={style.gitHubBalls}>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text> 
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>
+                <Text style={style.bolinhas}></Text>       
+            </View>           
+            
 
             <Pressable onPress={handlePressGoToGitHub}>
 
@@ -105,6 +199,8 @@ const style = StyleSheet.create({
     description: {
         fontWeight: 'bold',
         fontSize: 14,
+        marginBottom: 10,
+        textAlign: 'center',
         
     },
     button: {
@@ -118,4 +214,33 @@ const style = StyleSheet.create({
         fontSize: 16,
         
     },
+    bolinhas:{        
+        backgroundColor: colorDarkGreen,
+        height: 11,
+        width: 11,
+        borderRadius: 12,
+        margin: 0.7,
+        borderWidth: 0, 
+               
+        
+    },
+    ballLightGreen:{        
+        backgroundColor: colorLightGreen,
+        height: 11,
+        width: 11,
+        borderRadius: 12,
+        margin: 0.7,
+        borderWidth: 0,               
+        
+    },
+    gitHubBalls: { // colums
+        backgroundColor: colorGithub,        
+        justifyContent: 'center',
+        alignItems: 'center',     
+        flexDirection: 'row' 
+              
+        // flexDirection: 'row',
+
+    },
+    
 });
